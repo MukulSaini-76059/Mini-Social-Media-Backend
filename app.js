@@ -154,6 +154,7 @@ function isLoggedIn (req,res,next){
   next();
 }
 
-app.listen(4000, function(){
-  console.log("http://localhost:4000")
+const port= process.env.PORT
+app.listen(port, function(){
+  console.log(`http://localhost:${port}`)
 })
